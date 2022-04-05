@@ -25,7 +25,7 @@ there are no threats.
 ## What
  Made for book the ticket and cancel the ticket.
 ## Where
- User can access this application using any C compiler.
+ User can access this application using any python compiler.
 ## Why
  The system helps to book the movie tickets in online. 
 ## How
