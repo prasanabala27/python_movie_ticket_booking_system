@@ -95,10 +95,10 @@ class BookTicket:
                 din = input("enter the choice")
                 cell4 = sheet.cell(row=int(din), column=4)
                 print(cell4.value)
+                print("Your Ticket is booked")              
                 print(" CITY: COIMBATORE \n CINEMA HALL" + cell1.value +"\n MOVIE:" +cell2.value +"\n SCREEN:"+cell3.value+"\n TIME:"+ cell4.value)
                 print("USER DETAILS:")
                 print("Name:"+self.name)
-                print("Your Ticket is booked")
             else:
                 print("The seat is already booked")
         else:
