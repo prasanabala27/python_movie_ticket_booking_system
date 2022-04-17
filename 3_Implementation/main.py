@@ -53,8 +53,6 @@ class BookTicket:
     def available(self, arow, brow):
         if arow <= self.rows and brow <= self.seats:
             return True
-    
-
     def buy(self):
         row = sheet.max_row
         self.user_row = int(input('\nEnter the row of your seat 1-10:'))
@@ -69,7 +67,6 @@ class BookTicket:
                     self.user()
                     self.l[self.user_row - 1][self.user_seat - 1] = 'B'
                     self.userlist[self.user_row - 1][self.user_seat - 1] = {'name': self.name, 'gender': self.gender,'age': self.age, 'phone': self.phone}
-                    print("Your Ticket is booked")
                     self.currentincome += self.priceofticket(self.user_row)
                     self.noticketpurchased += 1
                 for i in range(1, row + 1):
@@ -101,6 +98,7 @@ class BookTicket:
                 print(" CITY: COIMBATORE \n CINEMA HALL" + cell1.value +"\n MOVIE:" +cell2.value +"\n SCREEN:"+cell3.value+"\n TIME:"+ cell4.value)
                 print("USER DETAILS:")
                 print("Name:"+self.name)
+                print("Your Ticket is booked")
             else:
                 print("The seat is already booked")
         else:
